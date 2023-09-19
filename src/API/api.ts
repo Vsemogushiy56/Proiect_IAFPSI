@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const $api = axios.create({
-  baseURL: "https://8ba1-89-28-84-178.ngrok-free.app",
+  baseURL: "https://realchatapp-x5ej.onrender.com",
   headers: { "Content-Type": "application/json", Accept: "application/json", "ngrok-skip-browser-warning": "69420" },
 });
 

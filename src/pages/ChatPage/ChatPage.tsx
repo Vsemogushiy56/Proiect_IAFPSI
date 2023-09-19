@@ -10,7 +10,7 @@ const ChatPage = () => {
 
   useEffect(() => {
     const TOKEN: string | null = localStorage.getItem("token");
-    const socketChannel: Socket = io.connect("https://8ba1-89-28-84-178.ngrok-free.app", {
+    const socketChannel: Socket = io.connect("https://realchatapp-x5ej.onrender.com", {
       extraHeaders: {
         "ngrok-skip-browser-warning": "69420",
         authorization: TOKEN || "",
