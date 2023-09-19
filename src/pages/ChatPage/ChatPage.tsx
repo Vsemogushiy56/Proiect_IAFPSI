@@ -10,8 +10,9 @@ const ChatPage = () => {
 
   useEffect(() => {
     const TOKEN: string | null = localStorage.getItem("token");
-    const socketChannel: Socket = io.connect("http://localhost:3000", {
+    const socketChannel: Socket = io.connect("https://8ba1-89-28-84-178.ngrok-free.app", {
       extraHeaders: {
+        "ngrok-skip-browser-warning": "69420",
         authorization: TOKEN || "",
       },
     });

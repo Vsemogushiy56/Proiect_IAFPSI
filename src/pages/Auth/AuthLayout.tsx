@@ -30,13 +30,13 @@ const AuthLayout = () => {
       try {
         const res = await user();
         setUser(res.data);
+          console.log(res.data)
       } catch (e) {
         navigate("/login");
       }
     };
     fetchUser();
   }, []);
-  console.log(userProfile);
   return (
     <UserContext.Provider value={userProfile}>
       <Header
