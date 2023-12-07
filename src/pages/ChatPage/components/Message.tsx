@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Divider } from "antd";
 import { SocketProvider } from "../ChatPage.tsx";
 import { UserContext } from "../../Auth/AuthLayout.tsx";
+import "./style1235.css";
 
 export const Message: React.FC<{
   messages: any[];
@@ -22,6 +23,7 @@ export const Message: React.FC<{
       {props.messages.map((el, index) => {
         return (
           <div key={index}>
+           
             <div
               style={{
                 display: "flex",
@@ -31,8 +33,9 @@ export const Message: React.FC<{
               }}
             >
               <h3 style={{ margin: 0 }}>{el.user.email}</h3>
-              <p>{el.text}</p>
-              <Divider style={{ margin: "5px" }} />
+             <div className="message">
+              <p>{el.text}</p></div>
+              <Divider style={{ margin: "4px", opacity: "1" }} />
             </div>
           </div>
         );

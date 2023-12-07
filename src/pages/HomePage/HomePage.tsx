@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
+import "./style1234.css"
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -18,12 +19,22 @@ const HomePage = () => {
           alignItems: "center",
         }}
       >
-        <h1>Welcome to the best online chat</h1>
-        <Button type="default" onClick={() => navigate("/u/chat")}>
-          Start
-        </Button>
-      </div>
-    </div>
+      
+        <div className="welcome-button">
+          Wrybill Chat-Explorer of Connections. 
+        </div>
+        
+        
+        <Button className="bn54 button-start" type="default" onClick={() => navigate("/u/chat")}>
+  <span className="bn54span">Start</span>
+</Button>
+
+        
+</div>
+
+        </div>
+      
+    
   );
 };
 

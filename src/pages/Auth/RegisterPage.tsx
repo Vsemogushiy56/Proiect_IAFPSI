@@ -1,7 +1,7 @@
 import { Button, Form, Input } from "antd";
 import { authApi } from "../../API/api.ts";
 import { useNavigate } from "react-router-dom";
-
+import "./style123.css";
 export type FieldType = {
   id: number;
   username?: string;
@@ -38,10 +38,15 @@ const RegisterPage = () => {
           alignItems: "center",
         }}
       >
-        <h1>Register</h1>
+        <div className="container">
+  <div className="image-container"></div>
+    
+        <div className="form-container">
+        <h1 style={{marginLeft:"40px"}}>Register</h1>
+        <div className="email-form">
         <Form
           name="basic"
-          labelCol={{ span: 8 }}
+          labelCol={{ span: 6 }}
           wrapperCol={{ span: 16 }}
           style={{ maxWidth: 600 }}
           initialValues={{ remember: true }}
@@ -78,18 +83,26 @@ const RegisterPage = () => {
                 justifyContent: "space-between",
               }}
             >
-              <Button type="primary" htmlType="submit">
+              <div className="button-container">
+              <Button className = "button" type="primary" htmlType="submit">
                 Submit
               </Button>
-              <Button type="text" onClick={() => navigate("/login")}>
+              <Button className= "existing-button" type="text" onClick={() => navigate("/login")}>
                 Already Exists
               </Button>
             </div>
+            </div>
           </Form.Item>
         </Form>
+        </div>
       </div>
     </div>
+  
+    </div>
+    </div>
+    
   );
 };
+
 
 export default RegisterPage;

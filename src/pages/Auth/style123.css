@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+body {
+ 
+  animation: theme 21s linear infinite;
+ 
+
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    width: 100vmax;
+    height: 100vmax;
+    background: rgba(0, 0, 0, 0.05);
+    animation: background 70s linear infinite;
+  }
+
+  &:after {
+    left: 15vw;
+  }
+
+  &:before {
+    right: 15vw;
+    animation-delay: -30s;
+    animation-direction: reverse;
+  }
+}
+
+@keyframes theme {
+  30% {
+    background: #3633AA;
+  }
+
+  30% {
+    background: #3735AB;
+  }
+
+  30% {
+    background: #3A38AE;
+  }
+
+  30% {
+    background: #3D3CB2;
+  }
+
+30% {
+    background: #504FBF;
+  }
+
+  30% {
+    background: #6463D1;
+  }
+
+  30% {
+    background: #8282F1;
+
+
+  }
+
+  30% {
+    background: #7e7ef1;
+
+
+}
+}
+
+@keyframes background {
+  0% {
+    transform: rotate(0deg);
+   
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+  
+
+/* Stiluri pentru antet */
+header {
+  background-color: #db343c;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Stiluri pentru butoane */
+/* style123.css */
+
+.button {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  border: none;
+  outline:none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+ 
+}
+
+.button {
+  width: 101%;
+  height: 50px;
+  font-family: 'Dhurjati', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+ 
+  font-family: 'Dhurjati', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  background: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  background-size: 3000% 100%;
+  animation: ani2 0.7s steps(29) forwards;
+  background-repeat: no-repeat;
+  margin-right: 30px;
+ 
+ 
+}
+
+.button:hover {
+  animation: ani 0.7s steps(29) forwards;
+  background-color: transparent;
+  
+}
+
+@keyframes ani {
+  from {
+    background-position: 0 0;
+    background-color: black;
+   
+  }
+  to {
+    background-position: 100% 0;
+    background-color: transparent;
+    color: black;
+    
+  }
+}
+
+@keyframes ani2 {
+  from {
+    background-position: 100% 0;
+    background-color: transparent;
+   
+   
+  }
+  to {
+    background-position: 0 0;
+    background-color: transparent;
+    
+  }
+}
+
+.button-container{
+margin-right:100px;
+width: 150px;
+}
+
+
+.form-container {
+  
+  top: 100px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Stiluri pentru fiecare element în container */
+.form-container input,
+.form-container button {
+  margin-bottom: 10px;
+ 
+  width: 100%;
+  padding: 7px;
+
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.form-container button {
+  background-color: #72777a;
+  color: white;
+  cursor: pointer;
+ margin-right: 30px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+
+}
+
+.login-form{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+ ;
+
+}
+.container {
+  position: relative;
+}
+
+.image-container{
+  position: absolute;
+ 
+top: 70px;
+  
+  width: 100%; 
+  height: 100px;
+ 
+ 
+  background-image: url('WRYBILL_prev_ui.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+ 
+ 
+
+ 
+}
+.chatbtn{
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logoutbtn{
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+

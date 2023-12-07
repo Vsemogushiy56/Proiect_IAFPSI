@@ -2,6 +2,9 @@ import { authApi } from "../../API/api.ts";
 import { Button, Form, Input } from "antd";
 import { FieldType } from "./RegisterPage.tsx";
 import { useNavigate } from "react-router-dom";
+import "./style123.css";
+
+
 const LoginPage = () => {
   const navigate = useNavigate();
   const onFinish = async (e: HTMLFormElement) => {
@@ -16,12 +19,17 @@ const LoginPage = () => {
   };
 
   return (
+    
+  
+  
     <div
+    
       style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        minHeight: "90vh",
+        minHeight: "80vh",
+        
       }}
     >
       <div
@@ -29,18 +37,29 @@ const LoginPage = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          
         }}
       >
-        <h1>Login</h1>
+      <div className="container">
+  <div className="image-container"></div>
+    
+  
+
+
+    <div className="form-container">
+      <div className="login-form">
+        <h1 style={{marginLeft:"8px",}}>Login</h1>
+        </div>
         <Form
           name="basic"
-          labelCol={{ span: 8 }}
+          labelCol={{ span: 6 }}
           wrapperCol={{ span: 16 }}
           style={{ maxWidth: 600 }}
           initialValues={{ remember: true }}
           colon={false}
           onFinish={onFinish}
           autoComplete="off"
+         
         >
           <Form.Item<FieldType>
             label="Email"
@@ -64,18 +83,28 @@ const LoginPage = () => {
                 justifyContent: "space-between",
               }}
             >
-              <Button type="primary" htmlType="submit">
+              <div className="button-container">
+              <Button  className ="button" type="primary" htmlType="submit" >
+                
                 Submit
               </Button>
-              <Button type="text" onClick={() => navigate("/register")}>
+              <Button   className="register-button"type="text" onClick={() => navigate("/register")}>
                 Register
               </Button>
+
+            </div>
             </div>
           </Form.Item>
         </Form>
       </div>
     </div>
+    
+    </div>
+  
+    </div>
+   
   );
+  
 };
 
 export default LoginPage;

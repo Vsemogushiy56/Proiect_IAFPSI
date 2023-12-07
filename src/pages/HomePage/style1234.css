@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+
+.bn54 {
+  position: fixed;
+  top: 430px;
+  font-family: 'Dhurjati', sans-serif;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 60px;
+  width: 160px;
+  background-color: transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+  margin-bottom: 20px; /* sau orice spațiu între buton și text */
+}
+
+.bn54 .bn54span {
+  color: #000000;
+  font-size: 29px;
+  letter-spacing: 0.7px;
+}
+
+.bn54:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+  background-color: transparent;
+  
+}
+
+.bn54:hover .bn54span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+ 
+}
+
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+
+.welcome-button {
+ top:300px;
+  position: fixed;
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+

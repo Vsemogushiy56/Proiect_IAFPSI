@@ -3,6 +3,7 @@ import { Header } from "antd/es/layout/layout";
 import { Button, Divider } from "antd";
 import React, { useEffect, useState } from "react";
 import { userApi } from "../../API/api.ts";
+import "./style123.css";
 
 const user = async () => {
   const token = localStorage.getItem("token");
@@ -50,10 +51,10 @@ const AuthLayout = () => {
       >
         <div>{userProfile.email}</div>
         <div>
-          <Button type="text" onClick={() => navigate("/u/chat")}>
+          <Button className="chatbtn" type="text" onClick={() => navigate("/u/chat")}>
             Chat
           </Button>
-          <Button
+          <Button className="logoutbtn"
             type="primary"
             onClick={() => {
               localStorage.removeItem("token");

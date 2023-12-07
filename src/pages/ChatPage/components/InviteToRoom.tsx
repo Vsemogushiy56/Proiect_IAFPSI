@@ -6,6 +6,7 @@ import { FieldType } from "../../Auth/RegisterPage.tsx";
 import { SocketProvider } from "../ChatPage.tsx";
 import { useForm } from "antd/es/form/Form";
 
+
 export const InviteToRoom: React.FC<{
   isOpen: boolean;
   setIsOpen: (state: boolean) => void;
